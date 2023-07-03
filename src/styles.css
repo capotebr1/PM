@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap');
+
+.App {
+  font-family: sans-serif;
+  text-align: start;
+  color: #cbcbcb;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  margin-left: 180px;
+}
+
+
+
+body{
+  margin: 0;
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+}
+
+.projectManager{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+
+}
+
+.process-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #1976d21c
+}
+
+.task{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.process {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.process-header {
+  display: flex;
+  gap: 20px;
+}
+
+.tasks-container{
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 40px;
+  text-overflow: ellipsis;
+  margin-left: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.task-list-item{
+  width: 128px;
+  height: 128px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s ;
+  cursor: pointer;
+  align-self: center;
+}
+
+.task-list-item:hover{
+  transform: scale(1.03);
+  border: 1px solid rgb(87, 179, 255);
+}
+
+.task-list-item:active{
+  transform: scale(1);
+}
+
+.project-row{
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .3;
+}
+
+.project-row:hover{
+  background-color: rgb(87, 179, 255, 0.1);
+}
+
+.project-header{
+  display: grid;
+  gap: 16px;
+  margin: 14px 0px;
+  align-items: center;
+  justify-items: flex-start;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: auto;
+}
+
+.tasks-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, .5fr));
+  justify-content: center;
+}
+
+.tasks-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.task-item{
+  font-family: "Roboto";
+  cursor: pointer;
+  transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.task-item:hover{
+  transform: scale(1.03);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+}
+
+.task-item:active{
+  transform: scale(1);
+}
